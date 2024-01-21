@@ -1,0 +1,53 @@
+// Main-Colors
+@use './colors.scss' as c;
+
+.items-box{
+    height: 215px;
+    width:  778px;
+    background-color: c.$light_grey;
+    border: 1px solid c.$hard_grey;
+    padding: 11px;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .item{
+        height: 40px;
+        width: 756px;
+        margin: 0px;
+        padding: 0px 11px;
+        border: 1px solid transparent;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        p{
+            margin: 0px;
+        }
+    }
+
+    .selected{
+        background-color: c.$hard_blue;
+        border: 1px solid c.$light_grey;
+
+        p{
+            color: c.$white;
+            text-align: start;
+            margin: 0px;
+        }
+    }
+}
+
+.items-box::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
+
+
+
+
